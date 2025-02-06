@@ -1,13 +1,16 @@
+# create IAM for dynamoDB read only
 module "iam_dynamodb" {
   source = "./modules/iam_dynamodb"
   //instance_id = var.instance_id
 }
 
+# create SG
 module "security_groups" {
   source = "./modules/security_groups"
   vpc_id = "vpc-0c00f5d96bc5520eb"
 }
 
+# create EC2 instance in aalimsee-tf-vpc and public subnet, SG and dynamoDB instance profile
 module "ec2_instances" {
   source = "./modules/ec2_instances"
   ami             = "ami-0c614dee691cbbf37"

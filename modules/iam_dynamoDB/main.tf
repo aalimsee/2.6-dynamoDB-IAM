@@ -75,17 +75,17 @@ resource "aws_iam_role" "dynamodb_role" {
 EOF
 }
 
+/* # Type - Customer inline
 resource "aws_iam_role_policy" "dynamodb_role_policy" {
   name   = "aalimsee-DynamoDBRolePolicy"
   role   = aws_iam_role.dynamodb_role.id
   policy = aws_iam_policy.dynamodb_read_policy.policy
-}
+} */
 resource "aws_iam_role_policy_attachment" "attach_dynamodb_policy" {
   role       = aws_iam_role.dynamodb_role.name
   policy_arn = aws_iam_policy.dynamodb_read_policy.arn
 
 }
-
 
 resource "aws_iam_instance_profile" "dynamodb_instance_profile" {
   name = "aalimsee-DynamoDBInstanceProfile"
