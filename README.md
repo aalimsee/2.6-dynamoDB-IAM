@@ -1,4 +1,9 @@
 # 2.6-dynamoDB-IAM
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_instance_profile
 
 # Test command after deployment
 aws dynamodb list-tables
