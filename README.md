@@ -1,3 +1,19 @@
+# Structure Tree
+├── README.md
+├── backend.tf
+├── main.tf
+├── modules
+│   ├── ec2_instances
+│   │   ├── main.tf
+│   │   └── variables.tf
+│   ├── iam_dynamoDB
+│   │   ├── main.tf
+│   │   └── output.tf
+│   └── security_groups
+│       ├── main.tf
+│       └── variables.tf
+└── provider.tf
+
 # 2.6-dynamoDB-IAM
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role
