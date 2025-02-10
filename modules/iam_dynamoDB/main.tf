@@ -58,7 +58,6 @@ EOF
 
 resource "aws_iam_role" "dynamodb_role" {
   name = "aalimsee-tf-DynamoDBReadOnlyRole"
-
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",
